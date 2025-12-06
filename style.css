@@ -1,0 +1,91 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 16px;
+    box-sizing: border-box; 
+    margin-bottom: 1rem;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: opacity 0.2s;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#copyBtn {
+    background-color: #2ecc71;
+    color: white;
+}
+
+#pasteBtn {
+    background-color: #3498db;
+    color: white;
+}
+
+.status-msg {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    height: 20px;
+    color: #27ae60;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.status-msg.visible {
+    opacity: 1;
+}
+
+.status-msg.error {
+    color: #e74c3c;
+}
